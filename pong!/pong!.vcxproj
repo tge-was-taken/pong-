@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{970C5DF0-8D78-42FC-AB13-E8E07DC36123}</ProjectGuid>
+    <RootNamespace>pong</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CustomBuildAfterTargets>Build</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CustomBuildAfterTargets>Build</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Programming\Libs\SDL2-2.0.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\Programming\Libs\SDL2-2.0.8\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\external\SDL2\include;..\external\SDL2_ttf\include;..\external\SDL2_image\include;..\external\SDL2_mixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;STRICT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\external\SDL2\lib\x64;..\external\SDL2_image\lib\x64;..\external\SDL2_ttf\lib\x64;..\external\SDL2_mixer\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>if not exist "$(OutDir)SDL2.dll"                   copy "$(ProjectDir)..\external\SDL2\lib\x64\SDL2.dll"                        "$(OutDir)SDL2.dll"
+if not exist "$(OutDir)SDL2_image.dll"      copy "$(ProjectDir)..\external\SDL2_image\lib\x64\SDL2_image.dll" "$(OutDir)SDL2_image.dll"
+if not exist "$(OutDir)libpng16-16.dll"       copy "$(ProjectDir)..\external\SDL2_image\lib\x64\libpng16-16.dll" "$(OutDir)libpng16-16.dll"
+if not exist "$(OutDir)zlib1.dll"                    copy "$(ProjectDir)..\external\SDL2_image\lib\x64\zlib1.dll"              "$(OutDir)zlib1.dll"
+if not exist "$(OutDir)SDL2_ttf.dll"              copy "$(ProjectDir)..\external\SDL2_ttf\lib\x64\SDL2_ttf.dll"             "$(OutDir)SDL2_ttf.dll"
+if not exist "$(OutDir)libfreetype-6.dll"      copy "$(ProjectDir)..\external\SDL2_ttf\lib\x64\libfreetype-6.dll"     "$(OutDir)libfreetype-6.dll"
+if not exist "$(OutDir)SDL2_mixer.dll"        copy "$(ProjectDir)..\external\SDL2_mixer\lib\x64\SDL2_mixer.dll" "$(OutDir)SDL2_mixer.dll"</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Message>Copying SDL2 DLLs</Message>
+      <Outputs>SDL2.dll;SDL2_image.dll;libpng16-16.dll;zlib1.dll;SDL2_ttf.dll;SDL2_mixer.dll</Outputs>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\external\SDL2\include;..\external\SDL2_ttf\include;..\external\SDL2_image\include;..\external\SDL2_mixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;STRICT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\external\SDL2\lib\x64;..\external\SDL2_image\lib\x64;..\external\SDL2_ttf\lib\x64;..\external\SDL2_mixer\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>if not exist "$(OutDir)SDL2.dll"                   copy "$(ProjectDir)..\external\SDL2\lib\x64\SDL2.dll"                        "$(OutDir)SDL2.dll"
+if not exist "$(OutDir)SDL2_image.dll"      copy "$(ProjectDir)..\external\SDL2_image\lib\x64\SDL2_image.dll" "$(OutDir)SDL2_image.dll"
+if not exist "$(OutDir)libpng16-16.dll"       copy "$(ProjectDir)..\external\SDL2_image\lib\x64\libpng16-16.dll" "$(OutDir)libpng16-16.dll"
+if not exist "$(OutDir)zlib1.dll"                    copy "$(ProjectDir)..\external\SDL2_image\lib\x64\zlib1.dll"              "$(OutDir)zlib1.dll"
+if not exist "$(OutDir)SDL2_ttf.dll"              copy "$(ProjectDir)..\external\SDL2_ttf\lib\x64\SDL2_ttf.dll"             "$(OutDir)SDL2_ttf.dll"
+if not exist "$(OutDir)libfreetype-6.dll"      copy "$(ProjectDir)..\external\SDL2_ttf\lib\x64\libfreetype-6.dll"     "$(OutDir)libfreetype-6.dll"
+if not exist "$(OutDir)SDL2_mixer.dll"        copy "$(ProjectDir)..\external\SDL2_mixer\lib\x64\SDL2_mixer.dll" "$(OutDir)SDL2_mixer.dll"</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Message>Copying SDL2 DLLs</Message>
+      <Outputs>SDL2.dll;SDL2_image.dll;libpng16-16.dll;zlib1.dll;SDL2_ttf.dll;SDL2_mixer.dll</Outputs>
+      <TreatOutputAsContent>true</TreatOutputAsContent>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="entities\ball.c" />
+    <ClCompile Include="dbg.c" />
+    <ClCompile Include="entities\paddle.c" />
+    <ClCompile Include="entities\score.c" />
+    <ClCompile Include="entity.c" />
+    <ClCompile Include="panels\dashedlinepanel.c" />
+    <ClCompile Include="panels\solidcolorpanel.c" />
+    <ClCompile Include="panels\textpanel.c" />
+    <ClCompile Include="scenemanager.c" />
+    <ClCompile Include="gfx.c" />
+    <ClCompile Include="soundmanager.c" />
+    <ClCompile Include="util\dictionary.c" />
+    <ClCompile Include="util\list.c" />
+    <ClCompile Include="panelmanager.c" />
+    <ClCompile Include="util\rand.c" />
+    <ClCompile Include="util\linkedlist.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="mem.c" />
+    <ClCompile Include="app.c" />
+    <ClCompile Include="util\math.c" />
+    <ClCompile Include="sequencemanager.c" />
+    <ClCompile Include="sequences\level.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="entities\ball.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="dbg.h" />
+    <ClInclude Include="entities\paddle.h" />
+    <ClInclude Include="entities\score.h" />
+    <ClInclude Include="entity.h" />
+    <ClInclude Include="panels\dashedlinepanel.h" />
+    <ClInclude Include="panels\solidcolorpanel.h" />
+    <ClInclude Include="panels\textpanel.h" />
+    <ClInclude Include="scenemanager.h" />
+    <ClInclude Include="gfx.h" />
+    <ClInclude Include="soundmanager.h" />
+    <ClInclude Include="util\dictionary.h" />
+    <ClInclude Include="util\linkedlist.h" />
+    <ClInclude Include="util\list.h" />
+    <ClInclude Include="util\math.h" />
+    <ClInclude Include="mem.h" />
+    <ClInclude Include="app.h" />
+    <ClInclude Include="panelmanager.h" />
+    <ClInclude Include="util\rand.h" />
+    <ClInclude Include="sequencemanager.h" />
+    <ClInclude Include="sequences\level.h" />
+    <ClInclude Include="win.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\arial.ttf">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\arial.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="resources\beep.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\beep.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

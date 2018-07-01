@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gfx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\ball.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sequences\level.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\paddle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\score.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\linkedlist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\rand.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\math.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="soundmanager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\dictionary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scenemanager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="panelmanager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="panels\dashedlinepanel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="panels\solidcolorpanel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="panels\textpanel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sequencemanager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="app.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\ball.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sequences\level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\paddle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\score.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\linkedlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\rand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="soundmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\dictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scenemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="panelmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="panels\dashedlinepanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="panels\solidcolorpanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="panels\textpanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sequencemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="app.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="resources\beep.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
